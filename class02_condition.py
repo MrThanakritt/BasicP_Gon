@@ -13,8 +13,9 @@ eps = int(input("กรุณากรอกระยะทาง :"))
 
 if (eps < 50):
     print(eps,"ค่าบริการ 10 บาท")
-elif (eps >= 51  and eps <= 100) :
-    print(eps, "ค่าบริการ 15 บาท")
+elif (eps >= 51 ):
+    if(eps <= 100):
+        print(eps, "ค่าบริการ 15 บาท")
 elif (eps >= 101  and eps <= 300) :
     print(eps, "ค่าบริการ 25 บาท")
 elif (eps >= 301  and eps <= 500) :
